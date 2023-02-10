@@ -64,7 +64,7 @@ const MoonPath = () => {
         <motion.path
           d="M-8.00007 158.5C-8.00007 158.5 438.312 2.68291 720 1.5C1017.31 0.25147 1437.5 158.5 1437.5 158.5"
           fill="transparent"
-          strokeWidth="1"
+          strokeWidth="0"
           stroke="rgba(255, 255, 255, 0.69)"
           strokeLinecap="round"
           initial={{ pathLength: 0 }}
@@ -89,13 +89,13 @@ function App() {
        
         setCurrentIdx(curr => curr + 1)
       }
-    }, 3000)
+    }, 200)
   }, [currentIdx])
   
 
   return (
     <div className="App">
-      <h1>Moon calendar</h1>
+      <h1>Moon animation</h1>
       <div className="moonphase">
         {
           <img src={imgArray[currentIdx]} alt="moon" />

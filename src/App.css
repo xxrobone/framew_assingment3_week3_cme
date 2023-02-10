@@ -5,6 +5,10 @@
 }
 
 .moonphase {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
     display: block;
     -webkit-user-select: none;
     width: 200px;
