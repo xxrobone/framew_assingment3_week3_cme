@@ -24,7 +24,7 @@ function App() {
   
 
   return (
-    <div className="App">
+    <div className="app">
       <Nav ></Nav>
       <Logo />
       <img src={BG} alt="" className='bg_main' />
@@ -38,7 +38,7 @@ function App() {
             transition={{ duration: 0.6, delay: 1.4 }}
             >Welcome</motion.h2>
           <div className="text">
-            <h4>some text</h4>
+            <h4>You found US!</h4>
               <p className='brodtext'>desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis cum ut repudiandae impedit tempore unde earum assumenda. Architecto repellendus veritatis optio iusto ab magnam, tenetur nesciunt veniam consectetur sapiente?
               
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A assumenda, animi blanditiis magnam ab qui dicta eligendi similique itaque nemo obcaecati, mollitia consequatur. Dolorum eum magnam temporibus ea incidunt, repellendus at, voluptatum exercitationem qui vitae assumenda ex quos necessitatibus obcaecati?

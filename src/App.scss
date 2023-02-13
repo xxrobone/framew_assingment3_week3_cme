@@ -4,20 +4,27 @@
   width: inherit;
 }
 
-.App {
+.app {
   height: 100%;
   width: 100%;
+  
 }
 
 .bg_main {
   position: absolute;
-  top: 0;
+  top: 5%;
   left: 10%;
   z-index: 99;
   width: 80%;
-  height: 100vh;
+  height: 90vh;
   pointer-events: none;
+  background-color: rgb(244, 242, 242);
+  background-blend-mode: darken;
+  z-index: -1;
 
+  img {
+    z-index: 1;
+  }
 }
 
 .content_wrapper {
@@ -26,7 +33,7 @@
   top: 0;
   left: 15%;
   width: 50%;
-  height: 100vh;
+  height: 90vh;
   display: grid;
   gap: 10px;
   grid-template-columns: 2fr 1fr;
@@ -53,7 +60,7 @@
 
   h2 {
     position: fixed;
-    left: 25%;
+    left: 22%;
     top: 25vh;
     font-size: clamp(2rem, 2vw, 3rem);
     text-transform: uppercase;
@@ -62,13 +69,17 @@
 
   }
 
+  h4 {
+    margin-bottom: 2rem;
+  }
+
   &:first-child {
     margin-top: 1rem;
   }
 
   .text {
     text-align: left;
-    padding: 3rem 4rem;
+    padding: 2rem 4rem;
     background-color: transparent;   
     
   }
@@ -106,7 +117,7 @@
 }
 
 .news {    
-  padding: 4rem 1rem 2rem;
+  padding: 6rem 1rem 2rem;
   height: 100%;
   position: absolute;
   overflow-y: scroll;
@@ -119,7 +130,7 @@
   h2 {
     position: fixed;
     left: 52.5%;
-    top: 25vh;
+    top: 30vh;
     color: rgb(150, 31, 31);
     font-size: clamp(2rem, 2vw, 3rem);
     text-transform: uppercase;

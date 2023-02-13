@@ -27,7 +27,8 @@ $font-base: base02;
 html {
   width: 100%;
   color: rgba(241, 241, 241, 0.87);
-  background-color: rgb(244, 242, 242);
+  background-image: url('./assets/images/bg_empty.jpg');
+  background-repeat: repeat;
 }
 body {
   margin: 0;
@@ -37,17 +38,15 @@ body {
   overflow-x: hidden;  
   color: rgba(241, 241, 241, 0.87);
   background-color: rgb(242, 240, 240);  
-  background-blend-mode: luminosity;
 z-index: 10000;
-  background-image: url('./assets/images/bg_empty.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
+  
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
   font-family: $font-base;
+  color: white;
 }
 
 h2 {
@@ -57,7 +56,8 @@ h2 {
 
 h4 {
   font-size: 1.4rem;
-  color: black;
+  color: rgb(89, 89, 89);
+  font-family: $font-base;
 }
 
 /* a {
