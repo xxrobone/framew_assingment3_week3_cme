@@ -5,64 +5,133 @@
 }
 
 .App {
-  width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  width: 100%;
 }
 
 .bg_main {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10%;
   z-index: 99;
-  width: 100vw;
+  width: 80%;
   height: 100vh;
-  object-fit: cover;
+  pointer-events: none;
+
 }
 
 .content_wrapper {
-  padding-top: 15vh;
+  padding-top: 20vh;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 70%;
+  left: 15%;
+  width: 50%;
   height: 100vh;
   display: grid;
   gap: 10px;
   grid-template-columns: 2fr 1fr;
-  background-color: green;
   overflow: hidden;
 }
 
 .left_side {
-background-color: orange;
+  position: relative;
+
 }
 
 .right_side {
-background-color: pink;
+  position: relative;
+
 }
 
-.members {
+.welcome {
   margin-left: 1rem;
-  padding: 2rem;
+  padding: 4rem 1rem 2rem;
   height: 100%;
+  position: absolute;
   overflow-y: scroll;
+  cursor: pointer;
 
-  .member {
+  h2 {
+    position: fixed;
+    left: 25%;
+    top: 25vh;
+    font-size: clamp(2rem, 2vw, 3rem);
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgb(234, 234, 234);
+    z-index: 100;
+
+  }
+
+  &:first-child {
+    margin-top: 1rem;
+  }
+
+  .text {
     text-align: left;
-    padding: 3rem 2rem;
-    background-color: red;
-    border: 2px solid orange;
+    padding: 3rem 4rem;
+    background-color: transparent;   
     
   }
 }
 
-.news {  
-  padding: 2rem;
+.members {
+  margin-left: 1rem;
+  padding: 4rem 1rem 2rem;
+  height: 100%;
+  position: absolute;
+  overflow-y: scroll;
+  cursor: pointer;
+
+  h2 {
+    position: fixed;
+    left: 25%;
+    top: 25vh;
+    font-size: clamp(2rem, 2vw, 3rem);
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgb(234, 234, 234);
+    z-index: 100;
+
+  }
+
+  &:first-child {
+    margin-top: 1rem;
+  }
+
+  .member {
+    text-align: left;
+    padding: 3rem 4rem;
+    background-color: transparent;   
+    
+  }
+}
+
+.news {    
+  padding: 4rem 1rem 2rem;
+  height: 100%;
+  position: absolute;
+  overflow-y: scroll;
+  cursor: pointer;
+
+  &:first-child {
+    margin-top: 3rem;
+  }
+
+  h2 {
+    position: fixed;
+    left: 52.5%;
+    top: 25vh;
+    color: rgb(150, 31, 31);
+    font-size: clamp(2rem, 2vw, 3rem);
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgb(237, 237, 237);
+    z-index: 100;
+
+  }
 
   .news_item {
     text-align: left;
-    padding: 3rem 2rem;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #b33030;
   }
 }
 

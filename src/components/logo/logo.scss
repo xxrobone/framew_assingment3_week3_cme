@@ -1,0 +1,17 @@
+
+.logo {
+    position: fixed;
+    left: 15%;
+    top: 1rem;
+    z-index: 1000;
+
+    h1 {
+        text-align: left;
+        font-size: clamp(3rem, 3vw, 5rem);
+        line-height: 1;
+
+        text-shadow: 3px 0px 7px rgba(27, 27, 26, 0.8), 
+	  -3px 0px 7px rgba(5, 5, 5, 0.8), 
+	  0px 4px 7px rgba(0, 0, 0, 0.8);
+    }
+}
