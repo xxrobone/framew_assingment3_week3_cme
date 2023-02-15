@@ -15,3 +15,14 @@ Quill,
 Rob One
 
 I hope this project is accepted as last minute change of heart. 
+
+## IMAGE from waybackmachine for design
+
+<img src="./massdestruction.png" alt="project design image" width="150"> &nbsp; &nbsp;
+
+
+## __My Socials__
+
+- Github - [robonexx](https://github.com/xxrobone)
+- Linkedin - [Robert Wägar](https://www.linkedin.com/in/robert-w%C3%A4gar-1b4661139/)
+- Portfolio - [Portfolio](https://www.robertwagar.se) - will do a remake using react or next
