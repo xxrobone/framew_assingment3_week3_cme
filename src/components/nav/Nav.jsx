@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {motion} from 'framer-motion'
 import './Nav.scss'
 
@@ -38,7 +39,9 @@ const Nav = () => {
               initial={{ opacity: 0, y: i % 2 === 0 ? -200 : -200 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.4, delay: i * 0.3 }}
-            ><a className='nav_link' href={path}>{title}</a></motion.li>            
+            >
+              <Link className='nav_link' to={path}>{title}</Link>
+            </motion.li>            
           ))
         }              
           </ul>
