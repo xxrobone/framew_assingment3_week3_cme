@@ -7,6 +7,7 @@ import BG from './assets/images/bg_main.png'
 import './App.scss'
 import Nav from './components/nav/Nav';
 import Logo from './components/logo/Logo';
+import BannerSideScroll from './components/bannersidescroll/BannerSideScroll';
 
 function App() {
   const [currentIdx, setCurrentIdx] = useState(0)
@@ -27,7 +28,9 @@ function App() {
     <div className="app">
       <Nav ></Nav>
       <Logo />
+      <div className='bg_white'></div>
       <img src={BG} alt="" className='bg_main' />
+      <BannerSideScroll />
       <div className="content_wrapper main">
         <div className="left_side ">
           <div className="welcome">

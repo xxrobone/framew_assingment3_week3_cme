@@ -10,17 +10,26 @@
   
 }
 
+.bg_white {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+  height: 90vh;
+  z-index: -1;
+
+  background-color: #ededed;
+
+}
+
 .bg_main {
   position: absolute;
   top: 5%;
   left: 10%;
-  z-index: 99;
   width: 80%;
   height: 90vh;
+  z-index: 100;
   pointer-events: none;
-  background-color: rgb(244, 242, 242);
-  background-blend-mode: darken;
-  z-index: -1;
 
   img {
     z-index: 1;
@@ -38,6 +47,7 @@
   gap: 10px;
   grid-template-columns: 2fr 1fr;
   overflow: hidden;
+  pointer-events: fill;
 }
 
 .left_side {
@@ -59,10 +69,12 @@
   cursor: pointer;
 
   h2 {
+    padding: 0.25rem 1rem;
     position: fixed;
     left: 22%;
     top: 25vh;
     font-size: clamp(2rem, 2vw, 3rem);
+    background-color: #ededed;
     text-transform: uppercase;
     text-shadow: 1px 1px rgb(234, 234, 234);
     z-index: 100;
@@ -94,12 +106,14 @@
   cursor: pointer;
 
   h2 {
+    padding: 0.25rem 1rem;
     position: fixed;
     left: 25%;
     top: 25vh;
     font-size: clamp(2rem, 2vw, 3rem);
     text-transform: uppercase;
     text-shadow: 1px 1px rgb(234, 234, 234);
+    background-color: #ededed;
     z-index: 100;
 
   }
@@ -128,6 +142,7 @@
   }
 
   h2 {
+    padding: 0.25rem 1rem;
     position: fixed;
     left: 52.5%;
     top: 30vh;
@@ -135,6 +150,7 @@
     font-size: clamp(2rem, 2vw, 3rem);
     text-transform: uppercase;
     text-shadow: 1px 1px rgb(237, 237, 237);
+    background-color: #ededed;
     z-index: 100;
 
   }
