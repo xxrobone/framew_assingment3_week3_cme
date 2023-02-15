@@ -38,7 +38,7 @@ body {
   place-items: center;
   overflow: hidden;  
   color: rgba(241, 241, 241, 0.87);
-  background-color: #ededed;  
+  background-image: url('./assets/images/bg_empty.jpg');
   z-index: 10000;
 
   &:before {
