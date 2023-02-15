@@ -4,7 +4,8 @@ import './Nav.scss'
 
 const navItems = [
   {
-    title: 'Members'
+    title: 'Members',
+    path: '/members'
   },
   {
     title: 'Media files'
@@ -31,13 +32,13 @@ const Nav = () => {
       <nav className='nav'>
       <ul className='menu'>
         {
-          navItems.map(({ title }, i) => (
+          navItems.map(({ title, path }, i) => (
             <motion.li className='nav_item'
               key={title}
               initial={{ opacity: 0, y: i % 2 === 0 ? -200 : -200 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.4, delay: i * 0.3 }}
-            ><a className='nav_link' href="">{title}</a></motion.li>            
+            ><a className='nav_link' href={path}>{title}</a></motion.li>            
           ))
         }              
           </ul>

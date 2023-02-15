@@ -1,11 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 // styles 
 import './logo.scss'
 
 const Logo = () => {
   return (
-      <div className='logo'>
+    <div className='logo'>
+      <Link to='/'>
           <motion.h1
               initial={{y: -300, opacity: 0}}
               animate={{y: 0, opacity: 1}}
@@ -20,6 +22,7 @@ const Logo = () => {
           >
               Destruction
           </motion.h1>
+      </Link>
     </div>
   )
 }

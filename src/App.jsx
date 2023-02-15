@@ -1,13 +1,17 @@
 import { useState, useEffect } from 'react';
+import {Routes, Route } from 'react-router-dom'
 import {motion} from 'framer-motion'
 /* import Moon from './pages/moon/Moon'; */
 import BG from './assets/images/bg_main.png'
-
-// styles
-import './App.scss'
 import Nav from './components/nav/Nav';
 import Logo from './components/logo/Logo';
 import BannerSideScroll from './components/bannersidescroll/BannerSideScroll';
+import Welcome from './pages/welcome/Welcome';
+
+// styles
+import './App.scss'
+import Members from './pages/members/Members';
+
 
 function App() {
   const [currentIdx, setCurrentIdx] = useState(0)
@@ -31,7 +35,13 @@ function App() {
       <div className='bg_white'></div>
       <img src={BG} alt="" className='bg_main' />
       <BannerSideScroll />
-      <div className="content_wrapper main">
+      {/* <Welcome /> */}
+      <Routes>
+      <Route path="/" element={<Welcome />} />
+      <Route path="/members" element={<Members />} />
+        {/* ... */}
+      </Routes>;
+    {/*   <div className="content_wrapper main">
         <div className="left_side ">
           <div className="welcome">
 
@@ -79,7 +89,7 @@ function App() {
               </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

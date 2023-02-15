@@ -16,8 +16,7 @@
   left: 10%;
   width: 80%;
   height: 90vh;
-  z-index: -1;
-
+  z-index: 0;
   background-color: #ededed;
 
 }
@@ -35,12 +34,13 @@
     z-index: 1;
   }
 }
-
+/* 
 .content_wrapper {
   padding-top: 20vh;
   position: absolute;
   top: 0;
   left: 15%;
+  z-index: 1;
   width: 50%;
   height: 90vh;
   display: grid;
@@ -168,3 +168,4 @@
   }
 }
 
+ */
