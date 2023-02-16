@@ -12,26 +12,36 @@
 
 .bg_white {
   position: absolute;
-  top: 5%;
-  left: 10%;
-  width: 80%;
-  height: 90vh;
+  top: 0%;
+  left: 5%;
+  width: 90%;
+  height: 100vh;
   z-index: 0;
   background-color: #ededed;
+
+  @media screen and (min-width: 768px) {
+    top: 0%;
+    left: 10%;
+    width: 80%;
+    height: 90vh;
+  }
 
 }
 
 .bg_main {
   position: absolute;
-  top: 5%;
-  left: 10%;
-  width: 80%;
-  height: 90vh;
-  z-index: 100;
+  top: 0%;
+  left: 5%;
+  width: 90%;
+  height: 100vh;
+  z-index: 10;
   pointer-events: none;
 
-  img {
-    z-index: 1;
+  @media screen and (min-width: 768px) {
+    top: 0%;
+    left: 10%;
+    width: 80%;
+    height: 90vh;
   }
 }
 

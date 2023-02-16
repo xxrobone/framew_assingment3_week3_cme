@@ -1,10 +1,15 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-
+import { useIsDesktop } from '../../hooks/useMediaQuery'
+import BG from '../../assets/images/bg_main.png'
+import BGMobile from '../../assets/images/bg_mobile.png'
 // styles
 import './Welcome.scss'
 const Welcome = () => {
+  const desktop = useIsDesktop()
   return (
+    <>
+    <img src={desktop ? BG : BGMobile} alt="" className='bg_main' />
     <div className="content_wrapper welcome">
     <div className="left_side ">
       <div className="welcome">
@@ -53,6 +58,7 @@ const Welcome = () => {
       </div>
     </div>
   </div>
+    </>
   )
 }
 

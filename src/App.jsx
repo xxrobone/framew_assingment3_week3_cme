@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
-import {Routes, Route } from 'react-router-dom'
+import {Routes, Route,  useLocation } from 'react-router-dom'
 import {motion} from 'framer-motion'
 import Members from './pages/members/Members';
 import NavMobile from './components/nav/NavMobile';
 import Hamburger from './components/hamburger/Hamburger';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
-import BG from './assets/images/bg_main.png'
 import Nav from './components/nav/Nav';
 import BannerSideScroll from './components/bannersidescroll/BannerSideScroll';
 import Welcome from './pages/welcome/Welcome';
@@ -20,7 +19,11 @@ function App() {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [active, setActive] = useState(false);
 
-  console.log(active)
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    setActive(false); // Close the navigation panel
+  }, [pathname]);
 /* 
   useEffect(() => {
     setTimeout(() => {
@@ -43,7 +46,7 @@ function App() {
       
      {/*  <Logo /> */}
       <div className='bg_white'></div>
-      <img src={BG} alt="" className='bg_main' />
+      
       <BannerSideScroll />
       {/* <Welcome /> */}
       <Routes>

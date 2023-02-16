@@ -3,14 +3,20 @@
     padding-top: 20vh;
     position: absolute;
     top: 0;
-    left: 15%;
-    width: 50%;
+    left: 5%;
+    width: 80%;
     height: 90vh;
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr;
     overflow: hidden;
     pointer-events: fill;
+
+    @media screen and (min-width: 768px) {
+      left: 15%;
+      width: 50%;
+    }
+
 
     .members {
         margin-left: 1rem;
@@ -40,6 +46,10 @@
           .passed {
             font-size: 0.8rem;
             color: black;
+            @media screen and (min-width: 768px) {
+              left: 15%;
+              width: 50%;
+            }
           }
 
           &:hover {

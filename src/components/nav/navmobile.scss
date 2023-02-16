@@ -8,13 +8,16 @@
     opacity: 0;
     transform: translateX(-120%);
     background-color: black;
-    visibility: visible;
+    opacity: 0;
+
+    transition: all 0.4s ease-in-out;
 
     @media screen and (min-width: 980px) {
-        visibility: hidden;
+        opacity: 1;
     }
 
     &.open {
+        transition: all 0.4s ease-in-out;
         opacity: 1;
         transform: translateX(0%);
     }
