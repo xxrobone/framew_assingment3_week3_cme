@@ -1,0 +1,28 @@
+footer {
+    padding: 0 1rem;
+    width: 80%;
+    height: 6vh;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+
+    .slam_tilt {
+        font-size: clamp(0.6rem, 1.4vw, 1rem);
+        letter-spacing: 1px;
+        color: white;
+
+        span {
+            padding: 0.25rem;
+            font-size: clamp(0.8rem, 1.6vw, 1.2rem);
+            color: rgb(150, 31, 31);
+            background-color: white;
+           
+        }
+
+    }
+}

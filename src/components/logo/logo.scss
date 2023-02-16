@@ -1,8 +1,6 @@
 
 .logo {
-    position: fixed;
-    left: 10%;
-    top: 2%;
+    position: relative;
     z-index: 101;
 
     @media screen and (min-width: 768px) {

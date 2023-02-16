@@ -1,0 +1,20 @@
+header {
+    width: 80%;
+    height: 10vh;
+    position: absolute;
+    top: 5%;   
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+
+    .header_text {
+        max-width: 50%;
+        align-self: flex-end;
+        font-size: clamp(0.6rem, 1.4vw, 1rem);
+        letter-spacing: 1px;
+        color: white;
+        background-color: rgb(150, 31, 31);    
+        }
+}

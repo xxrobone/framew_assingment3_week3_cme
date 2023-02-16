@@ -1,18 +1,19 @@
 import { useState, useEffect } from 'react';
 import {Routes, Route } from 'react-router-dom'
 import {motion} from 'framer-motion'
-/* import Moon from './pages/moon/Moon'; */
+import Members from './pages/members/Members';
+import NavMobile from './components/nav/NavMobile';
+import Hamburger from './components/hamburger/Hamburger';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
 import BG from './assets/images/bg_main.png'
 import Nav from './components/nav/Nav';
-import Logo from './components/logo/Logo';
 import BannerSideScroll from './components/bannersidescroll/BannerSideScroll';
 import Welcome from './pages/welcome/Welcome';
 
 // styles
 import './App.scss'
-import Members from './pages/members/Members';
-import NavMobile from './components/nav/NavMobile';
-import Hamburger from './components/hamburger/Hamburger';
+
 
 
 function App() {
@@ -35,10 +36,12 @@ function App() {
 
   return (
     <div className="app">
+      <Header />
       <Hamburger active={active} setActive={setActive}/>
       <Nav />
-      <NavMobile active={active}/>
-      <Logo />
+      <NavMobile active={active} />
+      
+     {/*  <Logo /> */}
       <div className='bg_white'></div>
       <img src={BG} alt="" className='bg_main' />
       <BannerSideScroll />
@@ -97,6 +100,7 @@ function App() {
           </div>
         </div>
       </div> */}
+      <Footer />
     </div>
   )
 }

@@ -34,6 +34,13 @@
     z-index: 1;
   }
 }
+
+.date_wrapper {
+  position: absolute;
+  bottom: 0rem;
+  left: 10vw;
+  z-index: 1001;
+}
 /* 
 .content_wrapper {
   padding-top: 20vh;

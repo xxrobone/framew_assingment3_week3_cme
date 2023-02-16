@@ -23,6 +23,15 @@ I hope this project is accepted as last minute change of heart.
 ## Demo online
 Massdestruction Demo - [MD](https://massdestruction.vercel.app/)
 
+## Tech used
+- [react-js](https://beta.reactjs.org/)
+- [vite-js](https://vitejs.dev/)
+- [react-router-dom](https://reactrouter.com/en/main)
+- [sass](https://sass-lang.com/)
+- [framer-motion](https://www.framer.com/motion/)
+- [date-fns](https://date-fns.org/)
+- [use-interval](https://www.npmjs.com/package/use-interval)
+
 
 ## __My Socials__
 
