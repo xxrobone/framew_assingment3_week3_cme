@@ -2,6 +2,8 @@
 
 ## Assignment 3 (Frameworks)
 
+A tribute to our dear member sven forshell who passed in 2016 and was the designer and developer for the original website of massdestruction (popping and locking group)
+
 ### Rebuilding of design from an old crew website
 
 So I changed my mind, I can add some interactive to it because its a part of the assignment
