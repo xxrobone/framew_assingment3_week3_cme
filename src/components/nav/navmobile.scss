@@ -1,0 +1,44 @@
+.nav_mobile {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateX(-120%);
+    background-color: black;
+
+    &.active {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    
+    .menu {
+        padding: 2rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        
+
+        .nav_item {
+            margin: 0.5rem 0;
+            list-style: none;
+            width: 100%;
+            background-color: #888;
+            text-align: left;
+
+            .nav_link {
+                padding: 0.25rem 1rem;
+                height: 100%;
+                width: 100%;
+                color: white;
+                font-size: 3rem;
+                font-family: base02;
+                
+            }
+        }
+    }
+}

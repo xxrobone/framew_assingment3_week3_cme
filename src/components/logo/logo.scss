@@ -1,9 +1,14 @@
 
 .logo {
     position: fixed;
-    left: 15%;
-    top: 6%;
-    z-index: 1000;
+    left: 10%;
+    top: 2%;
+    z-index: 99;
+
+    @media screen and (min-width: 768px) {
+        left: 15%;
+        top: 6%;
+    }
 
     a {
         text-decoration: none;
@@ -11,7 +16,7 @@
 
     h1 {
         text-align: left;
-        font-size: clamp(3rem, 3vw, 5rem);
+        font-size: clamp(2rem, 3vw, 5rem);
         line-height: 1;
 
         text-shadow: 3px 0px 7px rgba(27, 27, 26, 0.8), 

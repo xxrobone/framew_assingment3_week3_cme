@@ -11,6 +11,7 @@ import Welcome from './pages/welcome/Welcome';
 // styles
 import './App.scss'
 import Members from './pages/members/Members';
+import NavMobile from './components/nav/NavMobile';
 
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
 
   return (
     <div className="app">
-      <Nav ></Nav>
+      <Nav />
+      <NavMobile />
       <Logo />
       <div className='bg_white'></div>
       <img src={BG} alt="" className='bg_main' />

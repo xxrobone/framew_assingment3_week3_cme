@@ -9,22 +9,28 @@ const navItems = [
     path: '/members'
   },
   {
-    title: 'Media files'
+    title: 'Media files',
+    path: '/media'
   },
   {
-    title: 'Articles'
+    title: 'Articles',
+    path: '/articles'
   },
   {
-    title: 'Newsletter'
+    title: 'Newsletter',
+    path: '/newsletter'
   },
   {
-    title: 'Guestbook'
+    title: 'Guestbook',
+    path: '/guestbook'
   },
   {
-    title: 'Contact'
+    title: 'Contact',
+    path: '/contact'
   },
   {
-    title: 'Links'
+    title: 'Links',
+    path: '/links'
   },
 ]
 
