@@ -38,7 +38,7 @@ function App() {
   
 
   return (
-    <div className="app">
+    <div className="App">
       <Header />
       <Hamburger active={active} setActive={setActive}/>
       <Nav />
