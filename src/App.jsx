@@ -12,10 +12,14 @@ import Welcome from './pages/welcome/Welcome';
 import './App.scss'
 import Members from './pages/members/Members';
 import NavMobile from './components/nav/NavMobile';
+import Hamburger from './components/hamburger/Hamburger';
 
 
 function App() {
-  const [currentIdx, setCurrentIdx] = useState(0)
+  const [currentIdx, setCurrentIdx] = useState(0);
+  const [active, setActive] = useState(false);
+
+  console.log(active)
 /* 
   useEffect(() => {
     setTimeout(() => {
@@ -31,8 +35,9 @@ function App() {
 
   return (
     <div className="app">
+      <Hamburger active={active} setActive={setActive}/>
       <Nav />
-      <NavMobile />
+      <NavMobile active={active}/>
       <Logo />
       <div className='bg_white'></div>
       <img src={BG} alt="" className='bg_main' />

@@ -39,7 +39,7 @@ body {
   overflow: hidden;  
   color: rgba(241, 241, 241, 0.87);
   background-image: url('./assets/images/bg_empty.jpg');
-  z-index: 10000;
+  z-index: 100;
 
   &:before {
     animation: grain 12s steps(40) infinite;

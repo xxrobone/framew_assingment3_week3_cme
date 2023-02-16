@@ -31,9 +31,9 @@ const navItems = [
     },
 ];
 
-const NavMobile = () => {
+const NavMobile = ({active}) => {
   return (
-      <nav className='nav_mobile active'>
+      <nav className={`nav_mobile ${active ? 'open' :  ''}`}>
           <Logo />
            <ul className='menu'>
         {
