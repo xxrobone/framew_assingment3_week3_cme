@@ -3,7 +3,11 @@
     right: 15%;
     top: 30vh;
     z-index: 999;
+    visibility: hidden;
     
+    @media screen and (min-width: 980px) {
+        visibility:  visible;
+    }
 
     .menu {
         width: fit-content;

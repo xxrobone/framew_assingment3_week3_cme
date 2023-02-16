@@ -8,6 +8,11 @@
     opacity: 0;
     transform: translateX(-120%);
     background-color: black;
+    visibility: visible;
+
+    @media screen and (min-width: 980px) {
+        visibility: hidden;
+    }
 
     &.open {
         opacity: 1;
