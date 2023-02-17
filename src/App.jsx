@@ -9,9 +9,11 @@ import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 import BannerSideScroll from './components/bannersidescroll/BannerSideScroll';
 import Welcome from './pages/welcome/Welcome';
+import MemberDetails from './pages/members/MemberDetails';
 
 // styles
 import './App.scss'
+
 
 
 
@@ -52,6 +54,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Welcome />} />
       <Route path="/members" element={<Members />} />
+      <Route path="/members/:id" element={<MemberDetails />} />
         {/* ... */}
       </Routes>;
     {/*   <div className="content_wrapper main">
