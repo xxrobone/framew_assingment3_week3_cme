@@ -1,0 +1,92 @@
+
+.content_wrapper.media_files {
+    padding-top: 20vh;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 80%;
+    height: 90vh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    pointer-events: fill;
+
+    @media screen and (min-width: 768px) {
+      left: 15%;
+      width: 50%;
+    }
+
+
+    .media {
+        margin-left: 1rem;
+        padding: 6rem 1rem 2rem;
+        height: 100%;
+        position: relative;
+        cursor: pointer;
+
+        h1 {
+            font-size: clamp(3rem, 4vw, 5rem);
+            margin-bottom: 2rem;
+            text-align: center;           
+            color: black;
+        }
+      
+        /* h2 {
+          padding: 0.25rem 1rem 0.25rem 5rem;
+          position: relative;
+          font-size: clamp(2rem, 2vw, 3rem);
+          text-transform: uppercase;
+          text-shadow: 1px 1px rgb(234, 234, 234);
+          text-align: left;
+          color: rgb(150, 31, 31);
+          background-color: #ededed;
+          z-index: 100;
+
+          .passed {
+            font-size: 0.8rem;
+            color: black;
+            @media screen and (min-width: 768px) {
+              left: 15%;
+              width: 50%;
+            }
+          }
+
+          &:hover {
+            animation: memberGlitch 0.5s ease infinite forwards;
+        }
+      
+        } */
+      
+        &:first-child {
+          margin-top: 1rem;
+        }
+      
+        .member {
+          text-align: left;
+          padding: 3rem 4rem;
+          background-color: transparent;   
+          
+        }
+
+      }
+  }
+
+  @keyframes mediaGlitch {
+    0% {
+            text-shadow: 1px 2px #545353, -2px -1px rgb(0, 0, 0);
+    }
+    25% {
+            text-shadow: -2px -3px #dbdbdb, 1px 1px rgb(184, 81, 81);
+    }
+    50% {
+            text-shadow: 2px -3px #6c6c6b, -1px 2px rgb(4, 4, 4);
+    }
+    75% {
+            text-shadow: -4px -2px #d82312, -2px -3px rgb(220, 223, 223);
+    }
+    100% {
+            text-shadow: 3px 1px #dd2323, 2px 1px rgb(225, 227, 227);
+    }
+  }
+  

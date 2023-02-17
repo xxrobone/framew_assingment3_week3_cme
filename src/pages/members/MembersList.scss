@@ -14,6 +14,10 @@
           background-color: #ededed;
           z-index: 100;
 
+          span {
+            font-family: base02;
+          }
+
           &:hover {
             animation: memberGlitch 0.5s ease infinite forwards;
         }

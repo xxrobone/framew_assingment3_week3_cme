@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch'
 import { useIsDesktop } from '../../hooks/useMediaQuery'
+import Loading from '../../components/loading/Loading'
 import BGMEM from '../../assets/images/bg_members2.png'
 import BGMobile from '../../assets/images/bg_mobile.png'
 
@@ -21,8 +22,12 @@ const MemberDetails = () => {
     <>
        <img src={desktop ? BGMEM : BGMobile} alt="" className='bg_main' />
     <div className='member_details'>     
-      {isLoading && <div>Server is thinkin'...</div>}
-      {error && <div>{error}</div>}
+    {error && <div>{error}</div>}
+      {isLoading && (
+        <div>
+          <Loading />
+        </div>
+      )}
       {member && (
         <article>
           <h2>{member.name}</h2>

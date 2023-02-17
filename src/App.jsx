@@ -13,6 +13,7 @@ import MemberDetails from './pages/members/MemberDetails';
 
 // styles
 import './App.scss'
+import MediaFiles from './pages/mediafiles/MediaFiles';
 
 
 
@@ -55,6 +56,7 @@ function App() {
       <Route path="/" element={<Welcome />} />
       <Route path="/members" element={<Members />} />
       <Route path="/members/:id" element={<MemberDetails />} />
+      <Route path="/media" element={<MediaFiles />} />
         {/* ... */}
       </Routes>;
     {/*   <div className="content_wrapper main">
