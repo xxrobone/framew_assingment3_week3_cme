@@ -5,6 +5,53 @@ import BG from '../../assets/images/bg_main.png'
 import BGMobile from '../../assets/images/bg_mobile.png'
 // styles
 import './Welcome.scss'
+
+const newsItems = [
+  {
+    date: '2007-11-16',
+    n: 'Got a new clip, this one of Razzle Dazzle playing with Primes latest track. Check it all out in the media section.',
+  },
+  {
+    date: '2007-02-20',
+    n: 'G-Style member Baby Bang och Ooooh Tiffany brought us a clip from France with Primes music. Check it all out in the media section. (Ps. You can download the song too. ',
+  },
+  {
+    date: '2007-01-03',
+    n: 'Site is finally back up, AGAIN! Now our guestbook is working.',
+  },
+  {
+    date: '2005-02-18',
+    n: 'Mass Destruction featured in new commercial on Swedish Television',
+  },
+  {
+    date: '2004-12-24',
+    n: 'Merry Chistmas! There`s a new clip and a whole new section with',
+  },
+  {
+    date: '2004-11-11',
+    n: 'some rare oldschool footage and Quill mowing his lawn!',
+  },
+  {
+    date: '2004-11-06',
+    n: 'Slam Tilt wins the Swedish Masters in Gothenburg.',
+  },
+  {
+    date: '2004-10-30',
+    n: 'Slam Tilt wins 1on1 Boogie competition at the jam Fresh held in honour of our beloved DJ Leacy.',
+  },
+  {
+    date: '2004-10-29',
+    n: 'Slam Tilt enters the competition Battle Night and Grodan Sergel Stockholm with Abraham and Fidde from Style Warrios.',
+  },
+  {
+    date: '2004-05-1',
+    n: 'New back-grounds from the future',
+  },
+  {
+    date: '2004-05-11',
+    n: 'Site Released',
+  },
+]
 const Welcome = () => {
   const desktop = useIsDesktop()
   return (
@@ -19,12 +66,15 @@ const Welcome = () => {
         transition={{ duration: 0.6, delay: 1.4 }}
         >Welcome</motion.h2>
       <div className="text">
-        <h4>You found US!</h4>
-          <p className='brodtext'>desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis cum ut repudiandae impedit tempore unde earum assumenda. Architecto repellendus veritatis optio iusto ab magnam, tenetur nesciunt veniam consectetur sapiente?
-          
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A assumenda, animi blanditiis magnam ab qui dicta eligendi similique itaque nemo obcaecati, mollitia consequatur. Dolorum eum magnam temporibus ea incidunt, repellendus at, voluptatum exercitationem qui vitae assumenda ex quos necessitatibus obcaecati?
-            
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis velit ad eveniet praesentium, laboriosam quidem eligendi, numquam, esse repellat animi magni corporis nemo dolore in debitis natus molestiae! Accusantium debitis libero aspernatur vero, doloremque obcaecati quisquam sapiente hic possimus, aliquid cumque voluptatibus corrupti. Aliquid nostrum natus totam numquam hic est soluta modi tempore quaerat quidem voluptatem, facilis laudantium ipsam. Voluptate ratione nulla labore! Placeat, accusamus. Pariatur maiores temporibus veniam accusantium fugit! Tempora excepturi fugit dolores. Eveniet, saepe! Nihil laudantium est voluptate dolorum facere aliquam esse. Dolor dolores reiciendis sapiente enim ad earum exercitationem libero necessitatibus pariatur eum, corporis ullam nulla?
+        <h4>Join force with Three generations of funkateers.!</h4>
+              <p className='brodtext'>
+                 Patrik ‘Prime’ Helge & Tomas ‘Quill’ Strandgren, representing Swedens first generation, started back in 1983 as Hip Hop spread across the world. With its philosophy about originality and creativity they developed their own styles, gradually learning more about the true roots.<br/><br/>
+
+Second generation, starting with Hiphop/breaking -84-89 Robert "RobOne" Wägar later got struck by Funk and is the most prominent locker in Sweden today.
+<br/><br/>
+Joining these three veterans in the battle for the afterworld is Sven Forshell, a promising hope for the funk styles scene after the holocaust.
+<br/><br/>
+So, surviving several nuclear winters the dance still lives and breathes in the harsch climate of Scandinavia, and now it’s time to show what we got.
           </p>
       </div>
       
@@ -36,8 +86,16 @@ const Welcome = () => {
          initial={{ opacity: 0, x: 100 }}
          animate={{ opacity: 1, x: 0 }}
          transition={{ duration: 0.6, delay: 1.4 }}
-        >NEWS</motion.h2>
-          <div className="news_item">
+            >NEWS</motion.h2>
+             {newsItems.map(({date, n}) => (
+              <div className="news_item">
+              <p className='news_date'>{date}</p>
+              <p className='brodtext'>
+                {n}
+              </p>
+          </div>
+            ))}
+         {/*  <div className="news_item">
               <p className='brodtext'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dignissimos aut deserunt ipsa libero a totam quis, corrupti dolores id.</p>
           </div>
           <div className="news_item">
@@ -54,7 +112,7 @@ const Welcome = () => {
           </div>
           <div className="news_item">
               <p className='brodtext'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dignissimos aut deserunt ipsa libero a totam quis, corrupti dolores id.</p>
-          </div>
+          </div> */}
       </div>
     </div>
   </div>
