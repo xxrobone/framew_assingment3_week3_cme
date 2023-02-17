@@ -44,6 +44,10 @@ $move-final: calc(-40%);
     }
   }
 
+  .row_letter {
+    font-family: base02;
+  }
+
   @media (min-width: 768px) and 
   (max-width: 1024px) and 
   (-webkit-min-device-pixel-ratio: 2),
