@@ -1,5 +1,8 @@
 import { useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch'
+import { useIsDesktop } from '../../hooks/useMediaQuery'
+import BGMEM from '../../assets/images/bg_members2.png'
+import BGMobile from '../../assets/images/bg_mobile.png'
 
 // styles
 import './MemberDetails.scss'
@@ -12,8 +15,12 @@ const MemberDetails = () => {
     isLoading,
   } = useFetch(`https://my-json-server.typicode.com/xxrobone/db/members/${id}`);
 
+  const desktop = useIsDesktop();
+
   return (
-    <div className='member_details'>
+    <>
+       <img src={desktop ? BGMEM : BGMobile} alt="" className='bg_main' />
+    <div className='member_details'>     
       {isLoading && <div>Server is thinkin'...</div>}
       {error && <div>{error}</div>}
       {member && (
@@ -24,6 +31,8 @@ const MemberDetails = () => {
         </article>
       )}
     </div>
+    
+    </>
   );
 };
 
