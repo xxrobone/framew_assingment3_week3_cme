@@ -18,25 +18,30 @@
 
 .member_details {
     padding-top: 20vh;
+    width: 90%;
+    height: 90vh;
     position: absolute;
     top: 0;
     left: 0%;
-    width: 90%;
-    height: 90vh;
+   z-index: 9;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     grid-template-columns: 1fr;
-    overflow: hidden;
+   
     pointer-events: fill;
 
     background-color: #282828;
     background-blend-mode: luminosity;
 
+    overflow-x: hidden;
+        overflow-y: scroll;
+
     @media screen and (min-width: 768px) {
       left: 10%;
       width: 50%;
+      overflow: hidden;
     }
 
 
@@ -45,8 +50,7 @@
         margin-bottom: 2rem;
         width: 100%;
         position: relative;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        
 
         @media screen and (min-width: 768px) {
             margin-top: 4rem;
