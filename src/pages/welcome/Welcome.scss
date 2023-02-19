@@ -70,8 +70,12 @@
   
     .text {
       text-align: left;
-      padding: 2rem 4rem;
+      padding: 2rem 1rem;
       background-color: transparent;   
+
+      @media screen and (min-width: 768px) {
+        padding: 2rem 4rem;
+      }
       
     }
   }
@@ -108,7 +112,7 @@
     }
   
     .news_date {
-      padding: 3rem 2rem;
+      padding: 1rem 2rem;
       text-align: left;
       font-size: 0.6rem;
 
@@ -117,7 +121,7 @@
       }
     }
     .news_item {
-      padding: 3rem 2rem;
+      padding: 2rem 1rem;
       min-width: 220px;
       text-align: left;
       border-bottom: 2px solid #b33030;

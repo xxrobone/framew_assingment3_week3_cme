@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from 'react'
 
 // styles
-import './MembersList.scss'
+import './MemberList.scss'
 
 const MemberList = ({ members, name }) => {
     

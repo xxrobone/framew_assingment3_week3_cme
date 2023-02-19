@@ -46,11 +46,12 @@ function App() {
       <Hamburger active={active} setActive={setActive}/>
       <Nav />
       <NavMobile active={active} />
+      {setTimeout(() => {
+
+      }, 2000)}
+    <BannerSideScroll />
+      <div className='bg_white'></div>      
       
-     {/*  <Logo /> */}
-      <div className='bg_white'></div>
-      
-      <BannerSideScroll />
       {/* <Welcome /> */}
       <Routes>
       <Route path="/" element={<Welcome />} />
