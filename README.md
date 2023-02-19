@@ -3,7 +3,11 @@
 Implement a design from Dribble or a template or an existing website
 Try to make it as close to the original as possible 
 
-### My choice
+- this page is underconstruction but has everything needed for the CME assignment
+I will remake this website, and also try to implement a comments section cause ours 
+diden work, but I will remove the newsletter link
+
+## My choice
 
 Design from old crew website, a tribute to our dear member sven forshell who passed in 2016 
 He was the designer and developer for the original website of massdestruction (popping and locking group)
