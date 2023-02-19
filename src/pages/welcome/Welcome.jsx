@@ -88,31 +88,13 @@ So, surviving several nuclear winters the dance still lives and breathes in the 
          transition={{ duration: 0.6, delay: 1.4 }}
             >NEWS</motion.h2>
              {newsItems.map(({date, n}) => (
-              <div className="news_item">
+              <div className="news_item" key={date}>
               <p className='news_date'>{date}</p>
               <p className='brodtext'>
                 {n}
               </p>
           </div>
-            ))}
-         {/*  <div className="news_item">
-              <p className='brodtext'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dignissimos aut deserunt ipsa libero a totam quis, corrupti dolores id.</p>
-          </div>
-          <div className="news_item">
-              <p className='brodtext'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dignissimos aut deserunt ipsa libero a totam quis, corrupti dolores id.</p>
-          </div>
-          <div className="news_item">
-              <p className='brodtext'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dignissimos aut deserunt ipsa libero a totam quis, corrupti dolores id.</p>
-          </div>
-          <div className="news_item">
-              <p className='brodtext'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dignissimos aut deserunt ipsa libero a totam quis, corrupti dolores id.</p>
-          </div>
-          <div className="news_item">
-              <p className='brodtext'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dignissimos aut deserunt ipsa libero a totam quis, corrupti dolores id.</p>
-          </div>
-          <div className="news_item">
-              <p className='brodtext'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dignissimos aut deserunt ipsa libero a totam quis, corrupti dolores id.</p>
-          </div> */}
+            ))}       
       </div>
     </div>
   </div>
