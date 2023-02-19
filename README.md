@@ -1,23 +1,12 @@
-# First framework project CME
+# Assignment 3 (Frameworks)
 
-## Assignment 3 (Frameworks)
+Implement a design from Dribble or a template or an existing website
+Try to make it as close to the original as possible 
 
-A tribute to our dear member sven forshell who passed in 2016 and was the designer and developer for the original website of massdestruction (popping and locking group)
+### My choice
 
-
-### Rebuilding of design from an old crew website
-
-So I changed my mind, I can add some interactive to it because its a part of the assignment
-I want to rebuild and old website. We had a popping crew back some 15 years ago 
-our friend SLAM TILT Sven Forshell (R.I.P) created this site and did the designs back then. 
-He was also the person who put the group together. 
-Crew members of Massdescruction was 
-Slam Tilt,
-Prime,
-Quill,
-Rob One
-
-I hope this project is accepted as last minute change of heart. 
+Design from old crew website, a tribute to our dear member sven forshell who passed in 2016 
+He was the designer and developer for the original website of massdestruction (popping and locking group)
 
 ## IMAGE from waybackmachine for design
 
@@ -28,6 +17,23 @@ I hope this project is accepted as last minute change of heart.
 
 ## Demo online
 Massdestruction Demo - [MD](https://massdestruction.vercel.app/)
+
+
+
+## Rebuilding of design from an old crew website
+
+So I changed my mind (from previous choice Assignment 1), 
+I want to rebuild and old website. We had a popping crew back some 15-isch years ago 
+our friend SLAM TILT - Sven Forshell (R.I.P) created this site and did the designs back then. 
+He was also the person who put the group together. 
+Crew members of Massdescruction was 
+Slam Tilt,
+Prime,
+Quill,
+Rob One
+
+I hope this project is accepted as last minute change of heart.
+
 
 ## Tech used
 - [react-js](https://beta.reactjs.org/)
