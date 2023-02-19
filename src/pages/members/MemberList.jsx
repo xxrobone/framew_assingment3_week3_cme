@@ -14,7 +14,7 @@ const MemberList = ({ members, name }) => {
                 // need to add a key attribute on this to blog.id
                 <div key={member.id}>
                     <Link to={`/members/${member.id}`}>
-                        <h2><span>.0{i} - </span>{ member.name}</h2>                    
+                        <h2><span></span>{ member.name}</h2>                    
                     </Link>
                 </div>
             ))}
